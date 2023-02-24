@@ -1,0 +1,50 @@
+.flexContainer {
+    display: flex;
+    width: 33%;
+    padding: 35px;
+    margin:  auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 150px;
+    height: 300px;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.mySkills {
+    text-align: center;
+}
+
+
+.workGrid {
+    display: grid;
+    margin: 20px;
+    padding: 45px;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 35% 65%;
+
+}
+
+.projectOne {
+    grid-area: 45px;
+    padding: 45px;
+}
+
+.projectTwo {
+    grid-area: 45px;
+    padding: 45px;
+    margin: 75px;
+    gap: 100px; 
+}
+
+
+@media only screen and (max-width: 600){ 
+    .flexContainer {
+        display: column;
+        width: 100%;
+
+    }
+    
+}
